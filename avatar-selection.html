@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prototype v1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+          form {
+            font: 1em sans-serif;
+            max-width: 320px;
+          }
+          
+          p > label {
+            display: block;
+          }
+          
+          input[type="text"],
+          input[type="email"],
+          input[type="number"],
+          textarea,
+          fieldset {
+            width : 100%;
+            border: 1px solid #333;
+            box-sizing: border-box;
+          }
+          
+          input:invalid {
+            box-shadow: 0 0 5px 1px red;
+          }
+          
+          input:focus:invalid {
+            box-shadow: none;
+          }</style>
+</head>
+  <body>
+    <div class="container">
+      <h2>Choose your avatar</h2>
+      <div class="panel panel-default">
+            <div class="panel-body">
+      <form id="Questions">
+            <p>
+                <img
+                    src="Beastmode.resized.jpg"
+                    style="float: left; margin-right: 20px; margin-bottom: 5px; padding: 30px"
+                  />
+                <input type="radio" required name="a" id="Parthey" value="Parthey" style="margin-left: 100px;" ><label for="Parthey" style="margin-left: 100px">Parthey</label><br />
+            </p>    
+            <button onclick="window.location.href = 'https://beastmodepk.github.io/Project-for-software/Scenario1/prototype .html'">Submit and Goto Scenarios</a>    
+      <!-- <button onclick="">Submit And Goto Scenarios</a> -->
+        <!-- <script>
+                function verify() {
+                const option1 = document.getElementById("Parthey");
+                if (option1.checked) {
+                  window.location.href = "https://beastmodepk.github.io/Project-for-software/prototype.html";
+                } else if (!option1.checked) {
+                  alert("Please select an avatar!")
+                }
+              }
+            </script> -->
+    </div>  
+    </div>
+    </div>
+    <h3 style="margin-left: 425px"><a href="https://beastmodepk.github.io/Project-for-software/WebPage.html">Home</a></h3>
+  </body>
+</html>
