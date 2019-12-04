@@ -1,12 +1,13 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
-// import { Link } from "react-router-dom";
-// import
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import AvatarSelect from "./pages/AvatarSelect";
+import LessonSelect from "./pages/LessonSelect";
+
 export default function App() {
   return (
-    <Switch>
-      <Route exact path="/" component={AvatarSelect} />
-      <Route path="/" component={LessonSelect} />
-    </Switch>
+      <Switch>
+        <Route exact path="/" component={AvatarSelect} />
+        <Route path="/select-lesson" component={LessonSelect} />
+      </Switch>
   );
 }
