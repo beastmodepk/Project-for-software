@@ -1,15 +1,12 @@
-import React from 'react'
-import { Link } from "react-router-dom"; 
-// need to import component defined on another page
-class App extends React.Component {
-  render () {
-    return (
-      <Router>
-       <div>
-        <Link to="/src/scenario1.js" className="btn btn-primary">Scenario 1</Link>
-       </div>
-       </Router>
-    )
-  }
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+// import { Link } from "react-router-dom";
+// import
+export default function App() {
+  return (
+    <Switch>
+      <Route exact path="/" component={AvatarSelect} />
+      <Route path="/" component={LessonSelect} />
+    </Switch>
+  );
 }
-export default App;
