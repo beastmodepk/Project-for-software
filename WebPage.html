@@ -1,151 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>DigiSafe</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
     <style>
-      body {
-        background-image: url("Bg_pic_pk.jpg");
-        height: 100%; 
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-      }
-      /* Style the header */
-      .header {
-        background-color: #f1f1f1;
-        padding: 0.25px;
-        text-align: center;
+        h2 {
+            text-align: center;
+            letter-spacing: 3px;
         }
-      .gamename {
-        background-color: #f1f1f1 ;
-        padding: 0.25px;
-        text-align: center;
-      }
-      .Lastline {
-        background-color: #f1f1f1;
-        padding: 0.25px;
-        text-align: center;
-      }
-      .member {
-        padding-top: 25px;
-        padding-right: 5px;
-        padding-bottom: 5px;
-        padding-left: 5px;
-        text-align: center;
-      }
-      .topnav {
-        overflow: hidden;
-        background-color: #333;
-      }
-      .topnav a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-      .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-      }
-      .column {
-        float: left;
-        width: 50%;
-        padding: 15px;
-      }
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-      @media screen and (max-width:600px) {
+        
+        body {
+            background-image: url("Bg_pic_pk.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            color: black;
+        }
+        
+        .header {
+            background-color: #f1f1f1;
+            padding: 0.25px;
+            text-align: center;
+        }
+        
+        .gamename {
+            background-color: #f1f1f1;
+            padding: 0.25px;
+            text-align: center;
+        }
+        
+        .Lastline {
+            background-color: #f1f1f1;
+            padding: 0.25px;
+            text-align: center;
+        }
+        
+        .member {
+            padding-top: 25px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            text-align: center;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
         .column {
-          width: 100%;
+            float: left;
+            width: 47%;
+            padding: 15px;
         }
-      }
-      .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: white;
-        color: black;
-        text-align: center;
-      }
-      button {
-          background-color: #008CBA;
-          border: none;
-          color: white;
-          padding: 15px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin: 4px 2px;
-          cursor: pointer;
+        
+        .row {
+            content: "";
+            display: table;
+            clear: both;
+            padding: 15px;
+        }
+        
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+        }
+        
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 6px;
+        }
+        
+        button {
+            background-color: #008CBA;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        
+        p.italic {
+            font-style: italic;
+            text-align: justify;
         }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="header">
-      <h2>Software Project Website</h2>
-     </div>
-   
-    <div class="topnav">
-      <a href="https://beastmodepk.github.io/Project-for-software/Domainreaserch.html">Domain Reasearch</a>
-      <a href="https://beastmodepk.github.io/Project-for-software/explain_the_game.html">Prototype</a>
-      <a href="https://beastmodepk.github.io/Project-for-software/presentation.html">Presentation</a>
-      <a href="https://beastmodepk.github.io/Project-for-software/SRS.html">SRS</a>
-      <a href="https://beastmodepk.github.io/Project-for-software/demovid.html">Demonstration Video</a>
-      <a href="https://beastmodepk.github.io/Project-for-software/projectproposal.html">Project Proposal</a>
-      <a href="https://beastmodepk.github.io/Project-for-software/ProjectDescription.pdf">Original Description</a>
+        <h2>Software Project Website</h2>
     </div>
-   <div class="gamename">
-     <h3> Game name: DigiSafe<h3>
+
+    <div class="topnav">
+        <a href="https://beastmodepk.github.io/Project-for-software/Domainreaserch.html">Domain Reasearch</a>
+        <a href="https://beastmodepk.github.io/Project-for-software/explain_the_game.html">Prototype</a>
+        <a href="https://beastmodepk.github.io/Project-for-software/presentation.html">Presentation</a>
+        <a href="https://beastmodepk.github.io/Project-for-software/SRS.html">SRS</a>
+        <a href="https://beastmodepk.github.io/Project-for-software/demovid.html">Demonstration Video</a>
+        <a href="https://beastmodepk.github.io/Project-for-software/projectproposal.html">Project Proposal</a>
+        <a href="https://beastmodepk.github.io/Project-for-software/ProjectDescription.pdf">Original Description</a>
+    </div>
+    <div class="gamename">
+        <h3> Game name: DigiSafe<h3>
      </div>
+     <div class="panel-body">
     <div class="member">
       <h2> Created by- </h2>
       <button onclick="window.location.href = 'https://beastmodepk.github.io/Project-for-software/Julie.html'">Julie Chou </a> 
       <button onclick="window.location.href = 'https://beastmodepk.github.io/Project-for-software/Sophie.html'">Sophie Luise Hoelzel </button> 
       <button onclick="window.location.href = 'https://beastmodepk.github.io/Project-for-software/pk.html'">Parthey Khanderia </button> 
       <button onclick="window.location.href = 'https://beastmodepk.github.io/Project-for-software/craig.html'"> Craig Valenti</button>  
-    
-      <br>
-      <br>
+
     </div>
-    <div class="row">
-      <div class="column">
+  </div>
+    <div class="panel-body">
+        <div class="column">
+        <div class="row">
         <h2>Brief Project Description</h2>
-        <p><font color="white"> DigiSafe walks children through different scenarios that tackle the topics of Digital Downtime, Etiquette, Health, Integrity, Responsibility, Literacy, Privacy and Security. It will present situations that children will encounter in the digital world and enables them to handle these situations, for example creating a safe password or protecting themselves from phishing. 
+
+        <p class="italic"><font color="white"> DigiSafe walks children through different scenarios that tackle the topics of Digital Downtime, Etiquette, Health, Integrity, Responsibility, Literacy, Privacy and Security. It will present situations that children will encounter in the digital world and enables them to handle these situations, for example creating a safe password or protecting themselves from phishing. 
 After the introduction of the topic, the child will be asked how to behave in a certain situation and can choose the solution from a multiple choice catalogue. Alternatively, there will be an interactive surface for short answers. For every possible input there will be constructive feedback on potential risks and implications. Thus the child can try out different solutions and learn without the pressure of getting the one “right” solution. Once the child has selected the best appropriate solution, the “Next Question” button is activated. 
 One lesson consists of 10 questions and in total there are 8 lessons that can be completed anytime. DigiSafe can be used as an education tool in elementary school or at home. Overall, the program is a tool designed to help children navigate the digital world with confidence.
           However, it does not justify letting children use digital media unsupervised.</font></p>
+          </div>
+
       </div>
+
       <div class="column">
-        <style>
-          body {
-            color: black;
-          }
-        </style>
-        <h2>Brief Project Background</h2>
-        <p><font color="white">DigiSafe is an interactive edutainment game that playfully teaches children basic concepts in digital safety and responsibility. Pictorial scenarios introduce the children to different situations on the internet and explain important guidelines. Children can then apply the new information in simple questions that pick up the prior depicted scenario. The game provides immediate positive and constructive feedback to ensure consistent motivation.
+      <div class="row">
+
+       <h2>Brief Project Background </h2>
+        <p class="italic"><font color="white">DigiSafe is an interactive edutainment game that playfully teaches children basic concepts in digital safety and responsibility. Pictorial scenarios introduce the children to different situations on the internet and explain important guidelines. Children can then apply the new information in simple questions that pick up the prior depicted scenario. The game provides immediate positive and constructive feedback to ensure consistent motivation.
           </font>
         </p>
       </div>
     </div>
-    <h2 style="margin-left: 10px; color: white;">NOTE: Both the "Agenda & Minutes" and "Milestones" can be found on Blackboard</h2>
+
+    </div>
+    <br></br>
+  </div>
     <div class="footer">
       <p>This website was made for Software Engineering 1. This is our project website which will be updated throughout the project's life. Project started on 10/15/2019.<p>
       </body>
     </html>
-    
