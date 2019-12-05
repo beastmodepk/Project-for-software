@@ -7,28 +7,28 @@ export default function LessonSelect() {
     <div className="lesson-selection">
       <h1>Here are 8 Lessons to pick from. Pick a lesson to see the PSG and answer questions</h1>
       <Button to="/lesson1" renderAs={Link}>
-        (1)Security
+        Security
       </Button>
       <Button to="/lesson2" renderAs={Link}>
-        (2)Digital Downtime
+        Digital Downtime
       </Button>
       <Button to="/lesson2" renderAs={Link}>
-        (3)Etiquette
+       Etiquette
       </Button>
       <Button to="/lesson2" renderAs={Link}>
-        (4)Health
+        Health
       </Button>
       <Button to="/lesson2" renderAs={Link}>
-        (5)Integrity
+        Integrity
       </Button>
       <Button to="/lesson2" renderAs={Link}>
-        (6)Privacy
+        Privacy
       </Button>
       <Button to="/lesson2" renderAs={Link}>
-        (7)Responsibility
+        Responsibility
       </Button>
       <Button to="/lesson2" renderAs={Link}>
-        (8)Literacy
+        Literacy
       </Button>
     </div>
   );

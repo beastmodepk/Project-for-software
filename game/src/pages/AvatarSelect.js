@@ -14,7 +14,7 @@ export default function AvatarSelect() {
       <br></br>
      <div>
         <Link to="/select-lesson">
-        Avatar 1
+       Superhero
       </Link>
       <img src={hero_orb} alt="hero orb" height="100"/>
      </div>
@@ -22,7 +22,7 @@ export default function AvatarSelect() {
      <br></br>
      <div>
       <Link to="/select-lesson">
-        Avatar 2
+      Scientist
       </Link>
       <img src ={Beastmode} alt="hero orb" height="100"/>
       </div>
@@ -30,7 +30,7 @@ export default function AvatarSelect() {
      <br></br>
       <div>
       <Link to="/select-lesson">
-        Avatar 3
+        Sloth
       </Link>
       <img src={hero_orb} alt="hero orb" height="100"/>
       </div>
@@ -38,9 +38,15 @@ export default function AvatarSelect() {
      <br></br>
       <div>
       <Link to="/select-lesson">
-        Avatar 4
+        Astronaut
       </Link>
       <img src={Beastmode} alt="hero orb" height="100"/>
+      </div>
+      <div>
+      <Link to="/select-lesson">
+        Mermaid
+      </Link>
+      <img src={hero_orb} alt="hero orb" height="100"/>
       </div>
       <br></br>
      <br></br>
