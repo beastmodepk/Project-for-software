@@ -2,10 +2,15 @@
 <html lang="en">
 
 <head>
-    <title>Project Proposal </title>
+    <title>SRS (Systems Requirment Document)</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
+        h3 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        
         .header {
             background-color: #f1f1f1;
             padding: 0.25px;
@@ -27,17 +32,23 @@
     </div>
     <div class="header">
         <h2>SRS (Systems Requirment Document)</h2>
+
     </div>
+
     <div class="panel panel-default">
         <div class="panel-body">
-
+            <br>
+            <h4 style="margin-left:550px"><a href="https://beastmodepk.github.io/Project-for-software/WebPage.html">Home</a></h4>
             <ul>
                 <li>Team: No. 2 </li>
-                <li>Authors: Craig Valenti, Sophie Hoelzel, Julie Chou, Parthey Khanderia</li>
+                <li>Authors: Parthey Khanderia, Craig Valenti, Sophie Hoelzel, Julie Chou</li>
                 <li>Customer: Children aged 7-8 years old, parents, teachers</li>
                 <li>Instructor: Professor James Daly</li>
+                <br>
 
-                <h3>Introduction</h3>
+                <h3>1 Introduction</h3>
+                <br>
+
                 <p>The program’s Software Requirements Specification (SRS) of our edutainment game DigiSafe incorporates the purpose, scope and functionality of the system. Each section is designed to form a general, collective understanding of the program for the user as well as the implementer. This will help break down critical requirements and expectations clearly.
                 </p>
                 <p>The purpose of this software is to introduce children into the digital world and the Internet, and to give them important information on how to safely and confidently use digital media and the Internet as tools in everyday life to their benefit while staying safe and healthy. DigiSafe falls into the category of storyline games where you have to answer questions correctly to solve quests and proceed. Using simplified and pictorial scenarios, the children are taught how to behave in certain situations and apply their new knowledge in questions afterwards.
@@ -50,16 +61,20 @@
                 </p>
                 <p> In the last part of this document, the prototype of DigiSafe is introduced and it is described which steps to take to use it. This will help getting a feeling of how the end product will perform.
                 </p>
+
                 <h3>1.1 Purpose</h3>
+
                 <p>The purpose of Software Requirements Specification is to lay out the description, its parameters and goals of the software. The SRS forms the basis of agreement between the developer and clients.
                 </p>
                 <p>The intended audience of the SRS are all stakeholders, namely the developers, project managers and customers. The customers are teachers, parents and executives of the education system.
                 </p>
+
                 <h3>1.2 Scope </h3>
+
                 <p>“DigiSafe is an interactive edutainment game that playfully teaches children basic concepts in digital safety and responsibility. Pictorial scenarios introduce the children to different situations on the internet and explain important guidelines. Children can then apply the new information in simple questions that pick up the prior depicted scenario. The game provides immediate positive and constructive feedback to ensure consistent motivation. Coherently, no scores or points will be awarded.”
                 </p>
                 <br/>
-                </p>
+
                 <h3>1.3 Definitions, acronyms, and abbreviations</h3>
                 <p>In order to have a common understanding of game specific vocabulary, it is important to define the following terms:</p>
                 <ul>
@@ -67,7 +82,8 @@
                     </li>
                     <li>A Storyline is a simplified exemplary situation that could happen in the real world.</li>
                     <li>A PSG (pictorial scenario in the game’s storyline) is a text passage of 8 - 10 sentences and a picture that altogether form a storyline to give information on a certain topic.
-                    </li>Short Answer fields provide an interactive surface that exclusively checks syntax, not semantics.
+                    </li>
+                    <li>Short Answer fields provide an interactive surface that exclusively checks syntax, not semantics.</li>
                     <li>Multiple Choice options provide up to four different choices of which only one is correct.
                     </li>
                     <li>
@@ -79,96 +95,142 @@
                     </li>
                     <li> A Lesson consists of 10 quizzes; in total there are 8 lessons to be completed.”
                     </li>
-                    </li>
-                    <h3>1.4 Organization</h3>
-                    <p>The rest of the SRS will deal with the product perspective and product functions. The variety of interfaces, memory and constraints will be discussed. Detailed information will be given on user characteristics, dependencies and assumptions made.</p>
-                    <p>Unified Language Models will depict the structure of the software system and modeling requirements. Use Case Diagrams will be used to give an overview over dependencies between the system and stakeholders.</p>
-                    <p>In the end, the prototype will be introduced and sample scenarios will give an impression of how the final product will behave and how the gameplay will feel.</p>
-                    <h3>
-                2 Overall Description </h3>
-                    <p>In this section the content and functions of DigiSafe will be covered from the product’s perspective. Emphasis is given on the main goals that will be fulfilled by the different functions that our game has to offer. This section will also tackle the user characteristics and what can and will be expected from them. </p>
-
-                    <p>Constraints will be pondered and assumptions about the user’s technical possessions and dependencies between them and our software will be discussed.</p>
-                    <p>At the end of this section, future requirements will be defined that will be relevant after the prototype has been completed and implemented. At the moment the scope of these requirements is too tremendous to include all the discussed features, but they will significantly enhance the game experience in the future after its implementation. </p>
-
-                    <h3>2.1  Product Perspective </h3>
-                    <p>Since only 45% of High Schools in America teach Computer Science as a part of the K12-Education system due to a lack of resources [4], DigiSafe can officiate as an introductory tool that facilitates children’s access to digital education. The first version of DigiSafe is designed to be part of a Computer Science or Exploring The Internet lesson in elementary school to make the class more interactive and practical.The content will be taught by means of sample scenarios with metaphorical examples. For schools where Computer Science is not taught in school, DigiSafe can be used by parents at home.</p>
-                    <p>It is conceivable that with more content, more complex structures and in accordance with the department of Federal Department of Education DigiSafe could become Certified Education Technology and replace the Computer Science classes in elementary school. </p>
-                    <p>By initiating this education process at an early age, DigiSafe can help increase the demand for Computer Science classes and therefore help developing the STEM field and making it more attractive for a bigger crowd. It can also motivate children to pursue extracurricular Computer Science activities in higher grades, even though it might not be mandatory or offered as a course in school.</p>
-                    <p>Because DigiSafe will be designed as a component of the education system it will be completely free of any advertisement or commercial intention. </p>
-                    <h1>Image needed</h1>
-                    <p>Each lesson that will be taught through represents a different topic of digital safety, they are all independant and can be performed at any given time. No hierarchical order between the lessons is given.</p>
-                    <p>Since the game is web browser based, the client acts as a local host server. All verification is being done on the client, so no external server is required. The system functions independently, so there will be neither interfaces with other systems nor hardware interfaces. The only hardware needed to play this game will be a computer mouse, a keyboard and the desktop, which are all peripheral hardware.</p>
-                    <p>The software interfaces are abstracted, because we are not using any JavaScript interfaces or languages for data structures. The only interface used is for HTML to create components like the quizzes which the user will see.</p>
-                    <p>The user interface however will consist of Javascript which is the core of the design. It is important, that the User Interface is designed adequately for children therefore it should be intuitive and simple. To avoid overwhelming the user or putting epileptics in danger, there shouldn’t be too many moving things and colors at the same time. The avatar will be a crucial addition to the User Interface since it will help the user to connect to the material. It can be chosen out of a range of 5 different avatars. The chosen avatar will lead the user through the gameplay and the scenarios. There will be a frame for the avatar next to the frame for the storyline text which will be surrounded by a speech bubble to make the avatar seem like the narrator. </p>
-                    <p>The process of choosing an avatar will also be the only site adaption operation that the user can perform. Keeping the order of the quizzes in a lessons facilitates the comparison of the student’s progress for an instructor.</p>
-                    <p> In order to create communication between the user and the game, there will be communication interfaces. They will be implemented by creating interactive fields that require the user’s input. One kind of interactive field will be a form that requires a String input, the other kind uses events like on-mouse-click functions to select one correct answer out of a multiple choice catalogue. Submission in these fields are sent to the client where they are verified. The only operations a user can make are therefore giving a text input and clicking on surfaces.</p>
-                    <p>Even though the client keeps track of the game progress during a particular lesson by saving it to the website’s short term memory, the overall progress will not be saved in order to avoid the need to create login credentials. DigiSafe is supposed to be as accessible as possible, therefore any kind of registration would hinder the usability for children. Once the browser is refreshed or reloaded, all memories will be lost. </p>
-                    <h3>
-    2.2 Product Functions </h3>
-                    <p>DigiSafe will allow the user to go through a series of questions relating to internet security and digital safety. Users are allowed to select an avatar which will lead them through the game. It will present situations that children will encounter in the digital world and enables them to handle these situations, for example creating a safe password or protecting themselves from phishing. After the introduction of the topic, the child will be asked how to behave in a certain situation and can choose the solution from a multiple choice catalogue. Alternatively, there will be an interactive surface for short answers. For every possible input there will be constructive feedback on potential risks and implications. Thus the child can try out different solutions and learn without the pressure of getting the one “correct” solution. Once the child has selected the best appropriate solution, the “Next Question” button is activated. One lesson consists of 10 questions in the total of 8 lessons that can be completed at anytime. DigiSafe can be used as an educational tool in elementary school or at home. Overall, the program is a tool designed to help children navigate the digital world with confidence. </p>
-                    <p>This high-level goal diagram provides an overall context for what the user will be taught in the process of this game. The overall goal is education in digital media and internet use with an entertaining component to enhance the learning experience and increase user loyalty. This main high-level goal is split up in 8 objectives, that describe the topics of which the goal consists. Each objective is broken down into the focus of the lessons, a more detailed view on what the user will be taught.</p>
-                    <p>The main idea of this diagram is to deliver clearer idea of how DigiSafe achieves the edutainment goal by giving an idea of the lesson plan at the same time. </p>
-                    <h1>IMAGE NEEDED</h1>
-                    <h3>
-   2.3 User Characteristics</h3>
-                    <p>The targeted user group are children aged 7-8 years. At that age, “[c]hildren can not only make predictions about a text, they can justify their thinking. They can articulate the main idea of a text using summarising skills. They can discuss the main character and any character traits reading between the lines (inferring) to draw information.” [1] These skills will help them to read and comprehend the scenarios given in the lessons and convey their new knowledge to apply it in the following quiz. They are expected to be able to make a causal connection between the information they are given, the options and inputs they choose and the output determined by the design of the game. Even though the game gives sufficient background information and feedback, they should be able to comprehend the abstraction that is inherent in dealing with digital media.They will have to be able to connect simplified metaphors to the real application, e.g. a treasure chest and a key as an example for precious information and a password. The questions asked will be on a level that a child in that age range understands and that involves only a small amount of critical thinking. </p>
-                    <p>As opposed to their literacy, their computational expertise can be low to almost non-existent, since they should always be advised and supervised by a parent or an instructor. Parent or an instructor should have some basic knowledge in how to operate a computer, e.g: how to turn on a computer and open a browser. They should be able to use a keyboard and a mouse as input devices.</p>
-                    <h3>
-  2.4  Constraints</h3>
-                    <p>The game is played on the browser, therefore the only way to access it is by using the input devices keyboard and mouse. The users can use their touchpad on their laptop or a mouse or tablets only since the website has not been configured for mobile device usage . </p>
-                    <p>A constraint that can seriously affect the gameplay is a slow internet connection. The customer's machine can have any Operating System as long as it supports the appropriate Web browser. Internet connections need to be up to speed to use the browser. The game will have a screen resolution of 160x144, be restricted to a color palette of four shades of color. These will take up to 1MB or less. The game does not save user’s data, once the web browser is refreshed, Digisafe will start again from the beginning. </p>
-                    <h3>
-   2.5 Assumptions and Dependencies</h3>
-                    <p>It is assumed that every user has access to a personal computer or laptop of any kind as well as access to the Internet. The game operates on any given browser specified in section 4. It is also assumed that the browser user is using its latest updated version. For example, Chrome on Windows, Mac and Linux need to be at least 77.03865.90. [9]</p>
-                    <h3>
-   2.6 Apportioning of Requirements</h3>
-                    <p>Due to time and capacity constraints, there are some features that will prove useful in the future but couldn't be implemented in version 1 of our prototype. After negotiations with the customers they will be addressed in future releases.</p>
-                    <p>In order to create a more coherent learning experience, being able to save the progress will be important. On the home page, there will be a learning curve and a study plan that depict the progress already made and the topics. Being able to save the progress will significantly improve the flow of the game when using it as a day to day lesson tool. Another feature that will address the flow and accessibility will be a feature of going back to the last question or jumping back to the homepage at any time without losing progress.</p>
-                    <p>Using machine learning, the game will recognize these topics where the user needs more practice, e.g. when he needed multiple attempts to get the correct answer and will automatically generate more questions from that pool. </p>
-                    <p>In addition, there will be a stronger hierarchy in the lessons. Now every quiz is a subunit to its superior topic (see figure in 2.2 Product Functions). In the future there will be more subtopics and in general a greater amount of questions that go further into detail. </p>
-                    <p>Adding more content can promote DigiSafe from an independant edutainment game to a whole educational program which accompanies students from an early age to higher grades where they can learn more about the internet and computer architecture in general targeting different age groups. At this point, a point system will help to keep track of the progress.</p>
-                    <p>To make the game more personalized hence improving user loyalty, users will be allowed to modify their own unique avatar by adding tools, accessories and child adequate weapons, e.g. a sword out of styrofoam, from a set of design elements. This will create a more unique game experience when they use the avatar to play in the minigames that will be a reward for completing a lesson in the future. The minigames will make the game more interactive and appealing. Choosing a username will also add to the personalized experience.</p>
-                    <p>Furthermore, to improve the educational experience gained from playing DigiSafe, video explanations along with audio instead of a plain written text scenarios can help to maintain user attention and receptivity. This especially make the game up suitable to an even younger target group, because younger children might not have sufficient reading skills.</p>
-                    <h3>
-   3 Specific Requirements </h3>
-                    <p>The user will have to choose between the following 5 avatars that each have possible design modifications:</p>
-                    <ol>
-                        <li>Superhero</li>
-                        <li>Scientist</li>
-                        <li>Sloth</li>
-                        <li>Astronaut</li>
-                        <li>Mermaid </li>
-                    </ol>
-                    <p>Also, the avatars will have different animations as a response to user input, which is specified below. As long as the user doesn’t change their avatar, the avatar’s design will remain the same throughout the game. This will also affect the graphic of the avatar in the minigame sequences in future versions of DigiSafe. </p>
-                    <p>As soon as the user has chosen their avatar, the game will automatically take them to the next site, where they can pick one of the following 8 lessons:</p>
-                    <ol>
-                        <li>
-                            Security
-                            <p>Digisafe will educate children on how to secure one’s data. Creating safe passwords and being responsible with unacquainted hard drives and USB sticks will be part of this lesson.</p>
-                            <li>Digital Downtime
-                                <p>Too much screen time may lead to obesity, behavioral issues, loss of social skills and or less time to play outside. Digisafe will guide children on how to use social media properly in a timely matter.</p>
-                            </li>
-                            <li>
-                                Etiquette
-                                <p>Etiquette is important for young children, not only to their friends and parents but also to tools as well. Learning through computer is efficient and convenient but one should never take advantage of it. Digisafe will teach children how to treat technologies with positive etiquette manners. </p>
-                            </li>
-                            <li>
-                                Health
-                                <p>Too much screen time can be harmful for children as well as adults. Knowledge in how to live a healthy life with technology is crucial. Therefore this lesson will instruct users in how to maintain good posture while using digital media. There will also be recommendations on the frequency of taking breaks and on how to determine the amount of exercise needed per week. </p>
-                            </li>
-                            <li>
-                                Integrity
-                                <p>Integrity is one of the fundamental values when using the internet. Being honest is important, in this lesson DigiSafe will guide the user on how to be ethical in the media.</p>
-                                <li>Privacy
-                                    <p>In this lesson the user will learn how to make accounts private, how to disable cookies and how to use the incognito mode in the browser as well as to which extent these measurements ensure privacy.</p>
-                                    <li>Responsibility
-                                        <p>This lesson is supposed to help prevent “cyberbullying, viewing (or posting) inappropriate content, or plagiarism” [6].</p>
-                                        <li>Literacy
-                                            <p>“[P]art of digital literacy is learning to search for content in an online space. Students have to query a search engine using keywords and navigate those results, including assessing the reliability of particular authors and websites.” [9] Users will be taught the necessary skills to perform these activities.</p>
-
-                    </ol>
                 </ul>
+                <h3>1.4 Organization</h3>
+                <p>The rest of the SRS will deal with the product perspective and product functions. The variety of interfaces, memory and constraints will be discussed. Detailed information will be given on user characteristics, dependencies and assumptions made.</p>
+                <p>Unified Language Models will depict the structure of the software system and modeling requirements. Use Case Diagrams will be used to give an overview over dependencies between the system and stakeholders.</p>
+                <p>In the end, the prototype will be introduced and sample scenarios will give an impression of how the final product will behave and how the gameplay will feel.</p>
+                <h3>2 Overall Description </h3>
+                <p>In this section the content and functions of DigiSafe will be covered from the product’s perspective. Emphasis is given on the main goals that will be fulfilled by the different functions that our game has to offer. This section will also tackle the user characteristics and what can and will be expected from them. </p>
+
+                <p>Constraints will be pondered and assumptions about the user’s technical possessions and dependencies between them and our software will be discussed.</p>
+                <p>At the end of this section, future requirements will be defined that will be relevant after the prototype has been completed and implemented. At the moment the scope of these requirements is too tremendous to include all the discussed features, but they will significantly enhance the game experience in the future after its implementation. </p>
+
+                <h3>2.1  Product Perspective </h3>
+                <p>Since only 45% of High Schools in America teach Computer Science as a part of the K12-Education system due to a lack of resources [4], DigiSafe can officiate as an introductory tool that facilitates children’s access to digital education. The first version of DigiSafe is designed to be part of a Computer Science or Exploring The Internet lesson in elementary school to make the class more interactive and practical.The content will be taught by means of sample scenarios with metaphorical examples. For schools where Computer Science is not taught in school, DigiSafe can be used by parents at home.</p>
+                <p>It is conceivable that with more content, more complex structures and in accordance with the department of Federal Department of Education DigiSafe could become Certified Education Technology and replace the Computer Science classes in elementary school. </p>
+                <p>By initiating this education process at an early age, DigiSafe can help increase the demand for Computer Science classes and therefore help developing the STEM field and making it more attractive for a bigger crowd. It can also motivate children to pursue extracurricular Computer Science activities in higher grades, even though it might not be mandatory or offered as a course in school.</p>
+                <p>Because DigiSafe will be designed as a component of the education system it will be completely free of any advertisement or commercial intention. </p>
+                <h1>Image needed</h1>
+                <p>Each lesson that will be taught through represents a different topic of digital safety, they are all independant and can be performed at any given time. No hierarchical order between the lessons is given.</p>
+                <p>Since the game is web browser based, the client acts as a local host server. All verification is being done on the client, so no external server is required. The system functions independently, so there will be neither interfaces with other systems nor hardware interfaces. The only hardware needed to play this game will be a computer mouse, a keyboard and the desktop, which are all peripheral hardware.</p>
+                <p>The software interfaces are abstracted, because we are not using any JavaScript interfaces or languages for data structures. The only interface used is for HTML to create components like the quizzes which the user will see.</p>
+                <p>The user interface however will consist of Javascript which is the core of the design. It is important, that the User Interface is designed adequately for children therefore it should be intuitive and simple. To avoid overwhelming the user or putting epileptics in danger, there shouldn’t be too many moving things and colors at the same time. The avatar will be a crucial addition to the User Interface since it will help the user to connect to the material. It can be chosen out of a range of 5 different avatars. The chosen avatar will lead the user through the gameplay and the scenarios. There will be a frame for the avatar next to the frame for the storyline text which will be surrounded by a speech bubble to make the avatar seem like the narrator. </p>
+                <p>The process of choosing an avatar will also be the only site adaption operation that the user can perform. Keeping the order of the quizzes in a lessons facilitates the comparison of the student’s progress for an instructor.</p>
+                <p> In order to create communication between the user and the game, there will be communication interfaces. They will be implemented by creating interactive fields that require the user’s input. One kind of interactive field will be a form that requires a String input, the other kind uses events like on-mouse-click functions to select one correct answer out of a multiple choice catalogue. Submission in these fields are sent to the client where they are verified. The only operations a user can make are therefore giving a text input and clicking on surfaces.</p>
+                <p>Even though the client keeps track of the game progress during a particular lesson by saving it to the website’s short term memory, the overall progress will not be saved in order to avoid the need to create login credentials. DigiSafe is supposed to be as accessible as possible, therefore any kind of registration would hinder the usability for children. Once the browser is refreshed or reloaded, all memories will be lost. </p>
+                <h3> 2.2 Product Functions </h3>
+                <p>DigiSafe will allow the user to go through a series of questions relating to internet security and digital safety. Users are allowed to select an avatar which will lead them through the game. It will present situations that children will encounter in the digital world and enables them to handle these situations, for example creating a safe password or protecting themselves from phishing. After the introduction of the topic, the child will be asked how to behave in a certain situation and can choose the solution from a multiple choice catalogue. Alternatively, there will be an interactive surface for short answers. For every possible input there will be constructive feedback on potential risks and implications. Thus the child can try out different solutions and learn without the pressure of getting the one “correct” solution. Once the child has selected the best appropriate solution, the “Next Question” button is activated. One lesson consists of 10 questions in the total of 8 lessons that can be completed at anytime. DigiSafe can be used as an educational tool in elementary school or at home. Overall, the program is a tool designed to help children navigate the digital world with confidence. </p>
+                <p>This high-level goal diagram provides an overall context for what the user will be taught in the process of this game. The overall goal is education in digital media and internet use with an entertaining component to enhance the learning experience and increase user loyalty. This main high-level goal is split up in 8 objectives, that describe the topics of which the goal consists. Each objective is broken down into the focus of the lessons, a more detailed view on what the user will be taught.</p>
+                <p>The main idea of this diagram is to deliver clearer idea of how DigiSafe achieves the edutainment goal by giving an idea of the lesson plan at the same time. </p>
+                <h1>IMAGE NEEDED</h1>
+                <h3> 2.3 User Characteristics</h3>
+                <p>The targeted user group are children aged 7-8 years. At that age, “[c]hildren can not only make predictions about a text, they can justify their thinking. They can articulate the main idea of a text using summarising skills. They can discuss the main character and any character traits reading between the lines (inferring) to draw information.” [1] These skills will help them to read and comprehend the scenarios given in the lessons and convey their new knowledge to apply it in the following quiz. They are expected to be able to make a causal connection between the information they are given, the options and inputs they choose and the output determined by the design of the game. Even though the game gives sufficient background information and feedback, they should be able to comprehend the abstraction that is inherent in dealing with digital media.They will have to be able to connect simplified metaphors to the real application, e.g. a treasure chest and a key as an example for precious information and a password. The questions asked will be on a level that a child in that age range understands and that involves only a small amount of critical thinking. </p>
+                <p>As opposed to their literacy, their computational expertise can be low to almost non-existent, since they should always be advised and supervised by a parent or an instructor. Parent or an instructor should have some basic knowledge in how to operate a computer, e.g: how to turn on a computer and open a browser. They should be able to use a keyboard and a mouse as input devices.</p>
+                </h3> 2.4 Constraints</h3>
+                <p>The game is played on the browser, therefore the only way to access it is by using the input devices keyboard and mouse. The users can use their touchpad on their laptop or a mouse or tablets only since the website has not been configured for mobile device usage . </p>
+                <p>A constraint that can seriously affect the gameplay is a slow internet connection. The customer's machine can have any Operating System as long as it supports the appropriate Web browser. Internet connections need to be up to speed to use the browser. The game will have a screen resolution of 160x144, be restricted to a color palette of four shades of color. These will take up to 1MB or less. The game does not save user’s data, once the web browser is refreshed, Digisafe will start again from the beginning. </p>
+                <br>
+
+                <h3>2.5 Assumptions and Dependencies</h3>
+                <p>It is assumed that every user has access to a personal computer or laptop of any kind as well as access to the Internet. The game operates on any given browser specified in section 4. It is also assumed that the browser user is using its latest updated version. For example, Chrome on Windows, Mac and Linux need to be at least 77.03865.90. [9]</p>
+                <br>
+
+                </br>
+                <h3>2.6 Apportioning of Requirements</h3>
+                <p>Due to time and capacity constraints, there are some features that will prove useful in the future but couldn't be implemented in version 1 of our prototype. After negotiations with the customers they will be addressed in future releases.</p>
+                <p>In order to create a more coherent learning experience, being able to save the progress will be important. On the home page, there will be a learning curve and a study plan that depict the progress already made and the topics. Being able to save the progress will significantly improve the flow of the game when using it as a day to day lesson tool. Another feature that will address the flow and accessibility will be a feature of going back to the last question or jumping back to the homepage at any time without losing progress.</p>
+                <p>Using machine learning, the game will recognize these topics where the user needs more practice, e.g. when he needed multiple attempts to get the correct answer and will automatically generate more questions from that pool. </p>
+                <p>In addition, there will be a stronger hierarchy in the lessons. Now every quiz is a subunit to its superior topic (see figure in 2.2 Product Functions). In the future there will be more subtopics and in general a greater amount of questions that go further into detail. </p>
+                <p>Adding more content can promote DigiSafe from an independant edutainment game to a whole educational program which accompanies students from an early age to higher grades where they can learn more about the internet and computer architecture in general targeting different age groups. At this point, a point system will help to keep track of the progress.</p>
+                <p>To make the game more personalized hence improving user loyalty, users will be allowed to modify their own unique avatar by adding tools, accessories and child adequate weapons, e.g. a sword out of styrofoam, from a set of design elements. This will create a more unique game experience when they use the avatar to play in the minigames that will be a reward for completing a lesson in the future. The minigames will make the game more interactive and appealing. Choosing a username will also add to the personalized experience.</p>
+                <p>Furthermore, to improve the educational experience gained from playing DigiSafe, video explanations along with audio instead of a plain written text scenarios can help to maintain user attention and receptivity. This especially make the game up suitable to an even younger target group, because younger children might not have sufficient reading skills.</p>
+                <h3>3 Specific Requirements </h3>
+                <p>The user will have to choose between the following 5 avatars that each have possible design modifications:</p>
+                <ol>
+                    <li>Superhero</li>
+                    <li>Scientist</li>
+                    <li>Sloth</li>
+                    <li>Astronaut</li>
+                    <li>Mermaid </li>
+                </ol>
+                <p>Also, the avatars will have different animations as a response to user input, which is specified below. As long as the user doesn’t change their avatar, the avatar’s design will remain the same throughout the game. This will also affect the graphic of the avatar in the minigame sequences in future versions of DigiSafe. </p>
+                <p>As soon as the user has chosen their avatar, the game will automatically take them to the next site, where they can pick one of the following 8 lessons:</p>
+                <ol>
+                    <li>
+                        Security
+                        <p>Digisafe will educate children on how to secure one’s data. Creating safe passwords and being responsible with unacquainted hard drives and USB sticks will be part of this lesson.</p>
+                        <li>Digital Downtime
+                            <p>Too much screen time may lead to obesity, behavioral issues, loss of social skills and or less time to play outside. Digisafe will guide children on how to use social media properly in a timely matter.</p>
+                        </li>
+                        <li>
+                            Etiquette
+                            <p>Etiquette is important for young children, not only to their friends and parents but also to tools as well. Learning through computer is efficient and convenient but one should never take advantage of it. Digisafe will teach children how to treat technologies with positive etiquette manners. </p>
+                        </li>
+                        <li>
+                            Health
+                            <p>Too much screen time can be harmful for children as well as adults. Knowledge in how to live a healthy life with technology is crucial. Therefore this lesson will instruct users in how to maintain good posture while using digital media. There will also be recommendations on the frequency of taking breaks and on how to determine the amount of exercise needed per week. </p>
+                        </li>
+                        <li>
+                            Integrity
+                            <p>Integrity is one of the fundamental values when using the internet. Being honest is important, in this lesson DigiSafe will guide the user on how to be ethical in the media.</p>
+                            <li>Privacy
+                                <p>In this lesson the user will learn how to make accounts private, how to disable cookies and how to use the incognito mode in the browser as well as to which extent these measurements ensure privacy.</p>
+                                <li>Responsibility
+                                    <p>This lesson is supposed to help prevent “cyberbullying, viewing (or posting) inappropriate content, or plagiarism” [6].</p>
+                                    <li>Literacy
+                                        <p>“[P]art of digital literacy is learning to search for content in an online space. Students have to query a search engine using keywords and navigate those results, including assessing the reliability of particular authors and websites.” [9] Users will be taught the necessary skills to perform these activities.</p>
+
+                </ol>
+                <p>The chosen lesson will start and provide the user with the PSG, which means the PSG will...
+                </p>
+
+                <ol>
+                    <li>...Display the storyline with 8-10 sentences that explain the importance of the topic and explain how it should be handled.
+                        <ol type="a">
+                            <li>The language difficulty will be adjusted by the Leveling Resources Guide from Scholastic. [7]
+                            </li>
+                            <li>Next to the frame that displays the sentences of the PSG the avatar will be on a separate frame.
+                            </li>
+                            <li>The avatar will be depicted in the described situation.
+                            </li>
+                        </ol>
+                    </li>
+                    <li>...Subsequently pose the questions that the quiz contains.
+                        <ol type="a">
+                            <li>According to Leveling Resource Guide from Scholastic [7], the quizzes will be worded in second grade reading level so that anyone above second grade will be able to understand them.
+
+                            </li>
+                            <li>It will be ensured that the possible MC answers are clearly distinguishable.
+
+                            </li>
+                            <li>Depending on the answer that the user puts in, the avatar will have a different animation.
+                                <ol>
+                                    <li>A wrong answer will display the avatar with a sad facial expression.</li>
+                                    <ul>
+                                        <li>A window will pop up in which it is described why the answer is wrong and what implications this could have in the real world.</li>
+                                        <li>The user will get a hint on how to get the correct answer. Users can take the quiz until they get the correct answer, there is no trial limitation.
+                                        </li>
+                                    </ul>
+                                    <li>A correct answer will display the avatar with a happy facial expression.
+                                    </li>
+
+                            </li>
+
+                            </ol>
+                        </ol>
+                </ol>
+                </ol>
+                <p>After the user has finished a lesson the screen will offer an overview of the remaining lessons which the user can choose. Alternatively, the user can go back to the main screen to select another avatar. </p>
+                <h3>
+                                    4 	Modeling Requirements 
+</h3>
+                <h1>NEED TO PUT IMAGES. FIGURE OUT  WAY TO PUT ALL THE IMAGES HERE</h1>
+
+                </li>
+                </ol>
+
+            </ul>
 
             </ul>
         </div>
