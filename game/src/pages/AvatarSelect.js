@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Image from "react-bootstrap/Image";
-import hero_orb from "./hero_orb.jpg";
+import hero_laugh from "./hero_laugh.png";
 import Beastmode from "./Beastmode.jpg";
 
 export default function AvatarSelect() {
@@ -14,7 +14,7 @@ export default function AvatarSelect() {
       <br></br>
       <div>
         <Link to="/select-lesson">Superhero</Link>
-        <img src={hero_orb} alt="hero orb" height="100" />
+        <img src={hero_laugh} alt="hero orb" height="100" />
       </div>
       <br></br>
       <br></br>
@@ -26,7 +26,7 @@ export default function AvatarSelect() {
       <br></br>
       <div>
         <Link to="/select-lesson">Sloth</Link>
-        <img src={hero_orb} alt="hero orb" height="100" />
+        <img src={hero_laugh} alt="hero orb" height="100" />
       </div>
       <br></br>
       <br></br>
@@ -36,7 +36,7 @@ export default function AvatarSelect() {
       </div>
       <div>
         <Link to="/select-lesson">Mermaid</Link>
-        <img src={hero_orb} alt="hero orb" height="100" />
+        <img src={hero_laugh} alt="hero orb" height="100" />
       </div>
       <br></br>
       <br></br>
