@@ -8,7 +8,7 @@ export default function LessonSelect() {
         Here are 8 Lessons to pick from. Pick a lesson to see the PSG and answer
         questions
       </h1>
-      <Link to="/Security">Security</Link>
+      <Link to="/Security1">Security</Link>
       <Link to="/lesson2">Digital Downtime</Link>
       <Link to="/lesson2">Etiquette</Link>
       <Link to="/lesson2">Health</Link>
