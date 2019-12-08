@@ -1,17 +1,14 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import hero_laugh from "./hero_laugh.png";
-
 export default function Security1() {
   return (
-    <div className="security-lesson">
+    <div class="uk-panel">
+      <div data-uk-sticky="offset: 50;">HEW</div>
       <p>
         LINA: Look, I just reached my secret hideout! Only I have the key so
         nobody else can get in and steal my secret research and my precious
         treasures!
       </p>
       <br />
-      {/* need to make text appear on click with animation */}
       <p>
         In the digital world, your folders and personal data are contained in a
         secret hideout too, usually on your computer or in an online account.
@@ -26,7 +23,6 @@ export default function Security1() {
         incorporate a phrase or sequences that are familiar to you.
       </p>
       <br />
-      {/* need to make text appear on click with animation */}
       <p>
         LINA: I just went into my secret hideout and opened my research laptop,
         but I am afraid people will steal what I found out. I want to create a

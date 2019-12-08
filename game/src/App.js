@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import AvatarSelect from "./pages/AvatarSelect";
 import LessonSelect from "./pages/LessonSelect";
 import Security1 from "./pages/Security1";
