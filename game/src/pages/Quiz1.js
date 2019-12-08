@@ -15,7 +15,7 @@ import { makeStyles } from "@material-ui/core/styles";
 //   }
 // });
 
-export default function Security1() {
+export default function Quiz1() {
   // const classes = useStyles();
   return (
     <div>
@@ -90,7 +90,7 @@ export default function Security1() {
         style={{ float: "right" }}
         variant="outlined"
         color="secondary"
-        href="/Quiz1"
+        href="/Security1a"
       >
         Continue
       </Button>

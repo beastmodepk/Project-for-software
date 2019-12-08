@@ -7,6 +7,7 @@ import Security2 from "./pages/Security2";
 import Security3 from "./pages/Security3";
 import Security4 from "./pages/Security4";
 import Security5 from "./pages/Security5";
+import Quiz1 from "./pages/Quiz1";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Route exact path="/" component={AvatarSelect} />
       <Route path="/select-lesson" component={LessonSelect} />
       <Route path="/Security1" component={Security1} />
+      <Route path="/Quiz1" component={Quiz1} />
       <Route path="/Security2" component={Security2} />
       <Route path="/Security3" component={Security3} />
       <Route path="/Security4" component={Security4} />
