@@ -1,8 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
+import { Card } from "@material-ui/core";
+
 export default function Security1() {
   return (
-    <div class="uk-panel">
-      <div data-uk-sticky="offset: 50;">HEW</div>
+    <div>
       <p>
         LINA: Look, I just reached my secret hideout! Only I have the key so
         nobody else can get in and steal my secret research and my precious
