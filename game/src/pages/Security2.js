@@ -1,6 +1,6 @@
-import React from "react";
-// import { Link } from "react-router-dom";
-// import hero_laugh from "./hero_laugh.png";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import hero_laugh from "./hero_laugh.png";
 
 export default function Security2() {
   return (
