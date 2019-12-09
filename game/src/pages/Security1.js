@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Typography, Paper, Fade, Button } from "@material-ui/core";
 import laughing_cave from "./laughingcave.jpg";
-import { makeStyles } from "@material-ui/core/styles";
+// import { makeStyles } from "@material-ui/core/styles";
 
 // const useStyles = makeStyles({
 //   card: {
