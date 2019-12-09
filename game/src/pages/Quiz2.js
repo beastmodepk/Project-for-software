@@ -1,10 +1,8 @@
 import React from "react";
 import {
-  Checkbox,
   FormControlLabel,
   FormControl,
   FormLabel,
-  FormGroup,
   Card,
   Typography,
   Paper,
@@ -15,42 +13,37 @@ import {
   DialogContent,
   DialogContentText,
   DialogTitle,
+  RadioGroup,
+  Radio,
   Toolbar,
   AppBar
 } from "@material-ui/core";
+import { sizing } from "@material-ui/system";
 import wondering_cave from "./wonderingcave.jpg";
 
-export default function Quiz1() {
+export default function Quiz2() {
   const [state, setState] = React.useState({
-    wrong1: false,
-    correct1: false,
-    correct2: false,
-    wrong2: false,
-    incomplete: false,
+    // wrong1: false,
+    // correct1: false,
+    // wrong2: false,
     open: false,
     continue: false
   });
 
-  const handleChange = name => event => {
-    setState({ ...state, [name]: event.target.checked });
+  const handleChange = event => {
+    setValue(event.target.value);
   };
 
   const handleSubmit = event => {
-    if (state.correct1 && state.correct2 && !state.wrong1 && !state.wrong2) {
+    if (value === "correct1") {
       setState({ continue: true });
-      console.log(state);
-    } else if (
-      ((state.correct2 || state.correct1) && !state.wrong1 && !state.wrong2) ||
-      (!state.correct1 && !state.correct2 && !state.wrong1 && !state.wrong2)
-    ) {
-      setState({ incomplete: true });
     }
+    console.log(value);
     event.preventDefault();
     handleClickOpen(); // onSubmit, open dialog box for feedback
   };
 
-  const { wrong1, correct1, correct2, wrong2 } = state;
-
+  const [value, setValue] = React.useState("wrong1");
   const [open, setOpen] = React.useState(false); // for dialog box
 
   const handleClickOpen = () => {
@@ -66,7 +59,7 @@ export default function Quiz1() {
       <AppBar position="static">
         <Toolbar variant="dense">
           <Typography variant="h6" color="inherit">
-            DigiSafe - Security (Quiz 1)
+            DigiSafe - Security (Quiz 2)
           </Typography>
         </Toolbar>
       </AppBar>
@@ -96,25 +89,26 @@ export default function Quiz1() {
             }}
           >
             <Typography variant="h5">
-              "I just went into my secret hideout and opened my research laptop,
-              but I am afraid people will steal what I found out. I want to
-              create a password for my laptop. I will take the first letter of
-              every word in this sentence to make an acronym. I want to create a
-              password for my laptop - so the password will be Iwtcapfml. To
-              make it even more secure, I will add an exclamation mark and the
-              current year. So my new password is Iwtcapfml!2019."
+              "Hmm, the person just left but they left the package on my
+              doorstep. Oh the package is wrapped in gift paper and there’s a
+              tag that says ‘Lots of love, your sister. Open the package soon
+              before the things inside go bad!’ Well, I don’t have a sister but
+              who would send their sibling something bad? And I don’t want the
+              things inside to go bad, I should just open it now and see what is
+              inside."
             </Typography>
           </Card>
         </Fade>
       </div>
       <br />
-      {/* <Fade in="true" timeout={8000}> */}
       <div
         style={{
+          //   display: "inline-block",
           margin: "auto",
           width: "50%",
           justifyContent: "center",
           alignItems: "center"
+          //   left: "50%"
         }}
       >
         <Paper
@@ -125,51 +119,27 @@ export default function Quiz1() {
           }}
         >
           <form onSubmit={handleSubmit}>
-            <br />
             <FormControl component="fieldset">
               <FormLabel component="legend">
-                What makes a strong password? (Select all that apply)
+                <br />
+                Is opening the package a good idea? What would you do if you
+                received an eMail with an attachment from an unknown sender?
               </FormLabel>
-              <FormGroup>
+              <RadioGroup name="group" value={value} onChange={handleChange}>
                 <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={wrong1}
-                      onChange={handleChange("wrong1")}
-                      value="wrong1"
-                    />
-                  }
-                  label="Short and easy to remember"
+                  control={<Radio />}
+                  value="wrong1"
+                  label="Open the attachment, I am curious to see what is inside."
                 />
                 <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={correct1}
-                      onChange={handleChange("correct1")}
-                      value="correct1"
-                    />
-                  }
-                  label="Use a phrase and incorporate shortcut codes or acronyms"
+                  control={<Radio />}
+                  value="wrong2"
+                  label="Open the attachment because it seems urgent."
                 />
                 <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={correct2}
-                      onChange={handleChange("correct2")}
-                      value="correct2"
-                    />
-                  }
-                  label="Includes Numbers, Symbols, Capital Letters, and Lower-Case Letters"
-                />
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={wrong2}
-                      onChange={handleChange("wrong2")}
-                      value="wrong2"
-                    />
-                  }
-                  label="Your name or birthdays or used passwords"
+                  control={<Radio />}
+                  value="correct1"
+                  label="Don’t open the attachment."
                 />
                 <Button
                   style={{ float: "right" }}
@@ -186,51 +156,45 @@ export default function Quiz1() {
                   <DialogContent>
                     {state.continue && (
                       <DialogContentText id="correct-answer-text">
-                        Great Job, all answers are correct!
+                        Great Job, your answer is correct!
                       </DialogContentText>
                     )}
-                    {state.wrong1 && (
+                    {value === "wrong1" && (
                       <DialogContentText id="incorrect-answer-text">
-                        It cannot be too short and easy because there are
-                        programs that can guess password really quickly. The
-                        longer the password, the longer it takes to guess it.
-                        Nine letters take a few days, eleven letters can already
-                        take years to guess.
-                        <br />
+                        Is curiosity more important than your safety?
                       </DialogContentText>
                     )}
-                    {state.wrong2 && (
+                    {value === "wrong2" && (
                       <DialogContentText id="wrong2-answer-text">
-                        If someone tries to guess your password the first thing
-                        they would do is type in your name and birthday because
-                        it is so easy for you to remember. Don’t do that!
-                      </DialogContentText>
-                    )}
-                    {state.incomplete && (
-                      <DialogContentText id="incomplete-answer-text">
-                        Looks like you might be missing a correct answer, try
-                        again!
+                        Bad people often try to scam you into believing it is
+                        urgent so you act hastily. Ask your parents if it is
+                        legit and don’t click on it!
                       </DialogContentText>
                     )}
                   </DialogContent>
                   <DialogActions>
                     {!state.continue && (
-                      <Button onClick={handleClose} color="primary">
+                      <Button
+                        onClick={handleClose}
+                        color="primary"
+                        size="small"
+                      >
                         Continue
                       </Button>
                     )}
                     {state.continue && (
                       <Button
+                        width={1 / 4}
                         onClick={handleClose}
                         color="primary"
-                        href="/Security2"
+                        href="/Security3"
                       >
                         Continue
                       </Button>
                     )}
                   </DialogActions>
                 </Dialog>
-              </FormGroup>
+              </RadioGroup>
             </FormControl>
           </form>
           <br />

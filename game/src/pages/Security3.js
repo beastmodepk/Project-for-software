@@ -1,38 +1,107 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import hero_laugh from "./hero_laugh.png";
+import React from "react";
+import {
+  Card,
+  Typography,
+  Paper,
+  Fade,
+  Button,
+  Toolbar,
+  AppBar
+} from "@material-ui/core";
+import { sizing } from "@material-ui/system";
+import laughing_cave from "./laughingcave.jpg";
+// import universe from "./blue-and-purple-cosmic-sky-956999.jpg";
+
+// const useStyles = makeStyles({
+//   card: {
+//     minWidth: 275
+//   },
+//   title: {
+//     fontSize: 14
+//   },
+//   pos: {
+//     marginBottom: 12
+//   }
+// });
 
 export default function Security3() {
+  // const classes = useStyles();
   return (
-    <div className="security-lesson">
-      <p>
-        Oh there are cookies inside! I love cookies, I will try one! Oh… I don’t
-        feel so good...Everything is blurry and does it smell like cheese in
-        here? I will lay down for a while.
-      </p>
+    <div>
+      <AppBar position="static">
+        <Toolbar variant="dense">
+          <Typography variant="h6" color="inherit">
+            DigiSafe - Security (Part 3)
+          </Typography>
+        </Toolbar>
+      </AppBar>
       <br />
-      <h1>a few hours later</h1>
       <br />
-      {/* need to make text appear on click with animation */}
-      <p>
-        I have been asleep for a while, I drank herbal tea and took some
-        medication but I still don’t feel better… I should call my parents and
-        ask them for help!
-      </p>
       <br />
-      {/* need to make text appear on click with animation */}
-      <p>
-        Once you have a virus on your computer it can be pretty complicated to
-        get rid of it. Even though it might seem that you deleted the virus, it
-        could still hide somewhere and gradually destroy your computer or erase
-        your data. That is why you should never trust unknown senders and
-        hardware. If your computer got infected nevertheless you should
-        immediately shut it down to prevent it spreading through your computer
-        or, even worse, to other of your belongings. You should take it to a
-        computer specialist who might be able to restore your computer but if
-        not, all your important data could be lost. This is why you should
-        always make safety copies on independent hard drives and in a cloud.
-      </p>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center"
+        }}
+      >
+        <img
+          src={laughing_cave}
+          // style={classes.innerCenter}
+          height="411"
+          width="733"
+        />
+        {/* unknown behavior when changing css directly vs card attribute */}
+        <Fade in="true" timeout={4000}>
+          <Card
+            style={{
+              width: "25%",
+              padding: 10,
+              margin: 10
+            }}
+          >
+            <Typography variant="h4">
+              " Oh there are cookies inside! I love cookies, I will try one! Oh…
+              I don’t feel so good...Everything is blurry and does it smell like
+              cheese in here? I will lay down for a while."
+            </Typography>
+          </Card>
+        </Fade>
+      </div>
+      <br />
+      <div
+        style={{
+          padding: 30
+        }}
+      >
+        <Fade in="true" timeout={8000}>
+          <Paper>
+            <Typography variant="h6">
+              In the digital world, your folders and personal data are contained
+              in a secret hideout too, usually on your computer or in an online
+              account. Only people who have the right key, a password that you
+              set, can open it and access your data. For example in order to
+              open your phone, you have to type in 4 numbers. If they are
+              correct, you get to use the phone. Usually, you need a more secure
+              password, for example for your eMail account. A data thief could
+              easily guess these numbers, so never use your name or birthday as
+              part of the password. A good and secure password should contain
+              numbers, symbols, capital letters and lower-case letters. This can
+              be difficult to remember - this is why you should incorporate a
+              phrase or sequences that are familiar to you.
+            </Typography>
+          </Paper>
+        </Fade>
+      </div>
+      <br />
+      <Button
+        style={{ float: "right" }}
+        variant="outlined"
+        color="secondary"
+        href="/Quiz1"
+      >
+        Continue
+      </Button>
     </div>
   );
 }

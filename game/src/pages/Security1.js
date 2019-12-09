@@ -1,5 +1,14 @@
 import React from "react";
-import { Card, Typography, Paper, Fade, Button } from "@material-ui/core";
+import {
+  Card,
+  Typography,
+  Paper,
+  Fade,
+  Button,
+  Toolbar,
+  AppBar
+} from "@material-ui/core";
+import { sizing } from "@material-ui/system";
 import laughing_cave from "./laughingcave.jpg";
 import "../index.css";
 // import universe from "./blue-and-purple-cosmic-sky-956999.jpg";
@@ -24,6 +33,16 @@ export default function Security1() {
         source={universe}
         style={{ width: "100%", height: "100%" }}
       /> */}
+      <AppBar position="static">
+        <Toolbar variant="dense">
+          <Typography variant="h6" color="inherit">
+            DigiSafe - Security (Part 1)
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <br />
+      <br />
+      <br />
       <div
         style={{
           display: "flex",
@@ -57,14 +76,12 @@ export default function Security1() {
       <br />
       <div
         style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center"
+          padding: 30
         }}
       >
         <Fade in="true" timeout={8000}>
           <Paper>
-            <Typography variant="h5">
+            <Typography variant="h6">
               In the digital world, your folders and personal data are contained
               in a secret hideout too, usually on your computer or in an online
               account. Only people who have the right key, a password that you
@@ -82,15 +99,6 @@ export default function Security1() {
         </Fade>
       </div>
       <br />
-      <p>
-        I just went into my secret hideout and opened my research laptop, but I
-        am afraid people will steal what I found out. I want to create a
-        password for my laptop. I will take the first letter of every word in
-        this sentence to make an acronym. I want to create a password for my
-        laptop - so the password will be Iwtcapfml. To make it even more secure,
-        I will add an exclamation mark and the current year. So my new password
-        is Iwtcapfml!2019.
-      </p>
       <Button
         style={{ float: "right" }}
         variant="outlined"
