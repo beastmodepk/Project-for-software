@@ -1,7 +1,8 @@
 import React from "react";
 import { Card, Typography, Paper, Fade, Button } from "@material-ui/core";
 import laughing_cave from "./laughingcave.jpg";
-import { makeStyles } from "@material-ui/core/styles";
+import "../index.css";
+// import universe from "./blue-and-purple-cosmic-sky-956999.jpg";
 
 // const useStyles = makeStyles({
 //   card: {
@@ -18,7 +19,11 @@ import { makeStyles } from "@material-ui/core/styles";
 export default function Security1() {
   // const classes = useStyles();
   return (
-    <div>
+    <div className="bg">
+      {/* <ImageBackground
+        source={universe}
+        style={{ width: "100%", height: "100%" }}
+      /> */}
       <div
         style={{
           display: "flex",
