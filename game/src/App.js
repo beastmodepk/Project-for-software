@@ -9,6 +9,7 @@ import Security4 from "./pages/Security4";
 import Security5 from "./pages/Security5";
 import Quiz1 from "./pages/Quiz1";
 import Quiz2 from "./pages/Quiz2";
+import Quiz3 from "./pages/Quiz3";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <Route path="/Security2" component={Security2} />
       <Route path="/Quiz2" component={Quiz2} />
       <Route path="/Security3" component={Security3} />
+      <Route path="/Quiz3" component={Quiz3} />
       <Route path="/Security4" component={Security4} />
       <Route path="/Security5" component={Security5} />
     </Switch>

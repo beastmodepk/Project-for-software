@@ -61,10 +61,12 @@ export default function Security3() {
             }}
           >
             <Typography variant="h4">
-              " Oh there are cookies inside! I love cookies, I will try one! Oh…
+              "Oh there are cookies inside! I love cookies, I will try one! Oh…
               I don’t feel so good...Everything is blurry and does it smell like
-              cheese in here? I will lay down for a while."
+              cheese in here? I will lay down for a while".
             </Typography>
+            <br />
+            <Typography variant="h3">*A few hours pass...*</Typography>
           </Card>
         </Fade>
       </div>
@@ -77,18 +79,9 @@ export default function Security3() {
         <Fade in="true" timeout={8000}>
           <Paper>
             <Typography variant="h6">
-              In the digital world, your folders and personal data are contained
-              in a secret hideout too, usually on your computer or in an online
-              account. Only people who have the right key, a password that you
-              set, can open it and access your data. For example in order to
-              open your phone, you have to type in 4 numbers. If they are
-              correct, you get to use the phone. Usually, you need a more secure
-              password, for example for your eMail account. A data thief could
-              easily guess these numbers, so never use your name or birthday as
-              part of the password. A good and secure password should contain
-              numbers, symbols, capital letters and lower-case letters. This can
-              be difficult to remember - this is why you should incorporate a
-              phrase or sequences that are familiar to you.
+              "I have been asleep for a while, I drank herbal tea and took some
+              medication but I still don’t feel better… I should call my parents
+              and ask them for help!"
             </Typography>
           </Paper>
         </Fade>
@@ -98,7 +91,7 @@ export default function Security3() {
         style={{ float: "right" }}
         variant="outlined"
         color="secondary"
-        href="/Quiz1"
+        href="/Quiz3"
       >
         Continue
       </Button>

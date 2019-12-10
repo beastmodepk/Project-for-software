@@ -1,8 +1,15 @@
 import React from "react";
-import { Card, Typography, Paper, Fade, Button } from "@material-ui/core";
+import {
+  Card,
+  Typography,
+  Paper,
+  Fade,
+  Button,
+  AppBar,
+  Toolbar
+} from "@material-ui/core";
 import { sizing } from "@material-ui/system";
 import laughing_cave from "./laughingcave.jpg";
-import "../index.css";
 // import universe from "./blue-and-purple-cosmic-sky-956999.jpg";
 
 // const useStyles = makeStyles({
@@ -21,6 +28,16 @@ export default function Security2() {
   // const classes = useStyles();
   return (
     <div>
+      <AppBar position="static">
+        <Toolbar variant="dense">
+          <Typography variant="h6" color="inherit">
+            DigiSafe - Avatar Selection
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <br />
+      <br />
+      <br />
       <div
         style={{
           display: "flex",
