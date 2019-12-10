@@ -7,6 +7,14 @@ import {
   AppBar,
   Toolbar
 } from "@material-ui/core";
+
+import security_bckg from "./security_bckg.jpg";
+import Etiquette from"./etiquette.jpg"
+import Downtime from"./downtime.jpg"
+import Health from"./Health.jpg"
+import Privacy from"./Health.jpg"
+import Integrity from"./Integrity.jpg"
+
 // import { Link } from "react-router-dom";
 
 export default function LessonSelect() {
@@ -38,47 +46,73 @@ export default function LessonSelect() {
               Security
             </Button>
             <br />
+            <img src={security_bckg} alt="Security background" height="225" width="350" />
           </Paper>
         </Grid>
-        <Grid item>
-          <Paper>
-            <Button variant="contained" color="primary" disabled="true">
-              Scientist
-            </Button>
-            <br />
-          </Paper>
-        </Grid>
+       
         <Grid item>
           <Paper>
             <Button variant="contained" color="primary" disabled="true">
               Etiquette
             </Button>
             <br />
+            <img src={Etiquette} alt="Security background" height="225" width="350" />
           </Paper>
         </Grid>
-        <Grid item>
-          <Paper>
-            <Button variant="contained" color="primary" disabled="true">
-              Astronaut
-            </Button>
-            <br />
-          </Paper>
-        </Grid>
+        
         <Grid item>
           <Paper>
             <Button variant="contained" color="primary" disabled="true">
               Digital Downtime
             </Button>
             <br />
+            <img src={Downtime} alt="Security background" height="225" width="350" />
           </Paper>
         </Grid>
+
+        <Grid item>
+          <Paper>
+            <Button variant="contained" color="primary" disabled="true">
+            Health
+            </Button>
+            <br />
+            <img src={Health} alt="Security background" height="225" width="350" />
+          </Paper>
+        </Grid>
+        <Grid item>
+          <Paper>
+            <Button variant="contained" color="primary" disabled="true">
+            Integrity
+            </Button>
+            <br />
+            <img src={Integrity} alt="Security background" height="225" width="350" />
+          </Paper>
+        </Grid>
+
+        <Grid item>
+          <Paper>
+            <Button variant="contained" color="primary" disabled="true">
+            Privacy
+            </Button>
+            <br />
+            <img src={Privacy} alt="Security background" height="225" width="350" />
+          </Paper>
+        </Grid>
+        
+        <Grid item>
+          <Paper>
+            <Button variant="contained" color="primary" disabled="true">
+           Integrity
+            </Button>
+            <br />
+            <img src={Integrity} alt="Security background" height="225" width="350" />
+          </Paper>
+        </Grid>
+
       </Grid>
 
-      {/* <Link to="/lesson2">Digital Downtime</Link>
-      <Link to="/lesson2">Etiquette</Link>
-      <Link to="/lesson2">Health</Link>
-      <Link to="/lesson2">Integrity</Link>
-      <Link to="/lesson2">Privacy</Link>
+      {/* 
+     
       <Link to="/lesson2">Responsibility</Link>
       <Link to="/lesson2">Literacy</Link> */}
     </div>
