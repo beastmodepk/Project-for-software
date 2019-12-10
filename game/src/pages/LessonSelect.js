@@ -51,19 +51,44 @@ export default function LessonSelect() {
         </Grid>
        
         <Grid item>
-          <Paper>
-            <Button variant="contained" color="primary" disabled="true">
+          
+        <Paper
+            style={{
+              textAlign: "center",
+              justifyContent: "center",
+              alignItems: "center"
+            }}
+          >
+            <Button
+              variant="contained"
+              color="primary"
+              
+              align="center"
+              >
               Etiquette
             </Button>
+                       
+          
             <br />
             <img src={Etiquette} alt="Security background" height="225" width="350" />
           </Paper>
         </Grid>
         
         <Grid item>
-          <Paper>
-            <Button variant="contained" color="primary" disabled="true">
-              Digital Downtime
+        <Paper
+            style={{
+              textAlign: "center",
+              justifyContent: "center",
+              alignItems: "center"
+            }}
+          >
+          <Button
+              variant="contained"
+              color="primary"
+              
+              align="center"
+              >
+             Digital Downtown
             </Button>
             <br />
             <img src={Downtime} alt="Security background" height="225" width="350" />
@@ -71,8 +96,19 @@ export default function LessonSelect() {
         </Grid>
 
         <Grid item>
-          <Paper>
-            <Button variant="contained" color="primary" disabled="true">
+        <Paper
+            style={{
+              textAlign: "center",
+              justifyContent: "center",
+              alignItems: "center"
+            }}
+          >
+          <Button
+              variant="contained"
+              color="primary"
+              
+              align="center"
+              >
             Health
             </Button>
             <br />
@@ -80,9 +116,20 @@ export default function LessonSelect() {
           </Paper>
         </Grid>
         <Grid item>
-          <Paper>
-            <Button variant="contained" color="primary" disabled="true">
-            Integrity
+        <Paper
+            style={{
+              textAlign: "center",
+              justifyContent: "center",
+              alignItems: "center"
+            }}
+          >
+            <Button
+              variant="contained"
+              color="primary"
+            
+              align="center"
+            >
+              Integrity
             </Button>
             <br />
             <img src={Integrity} alt="Security background" height="225" width="350" />
@@ -90,26 +137,28 @@ export default function LessonSelect() {
         </Grid>
 
         <Grid item>
-          <Paper>
-            <Button variant="contained" color="primary" disabled="true">
-            Privacy
+        <Paper
+            style={{
+              textAlign: "center",
+              justifyContent: "center",
+              alignItems: "center"
+            }}
+          >
+            <Button
+              variant="contained"
+              color="primary"
+              
+              align="center"
+            >
+             Privacy
             </Button>
             <br />
             <img src={Privacy} alt="Security background" height="225" width="350" />
           </Paper>
         </Grid>
         
-        <Grid item>
-          <Paper>
-            <Button variant="contained" color="primary" disabled="true">
-           Integrity
-            </Button>
-            <br />
-            <img src={Integrity} alt="Security background" height="225" width="350" />
-          </Paper>
+        
         </Grid>
-
-      </Grid>
 
       {/* 
      
