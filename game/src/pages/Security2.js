@@ -31,7 +31,7 @@ export default function Security2() {
       <AppBar position="static">
         <Toolbar variant="dense">
           <Typography variant="h6" color="inherit">
-            DigiSafe - Avatar Selection
+          DigiSafe - Security (Part 2)
           </Typography>
         </Toolbar>
       </AppBar>
