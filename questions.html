@@ -1,77 +1,85 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Prototype v1</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <style>
-          form {
+        form {
             font: 1em sans-serif;
             max-width: 320px;
-          }
-          
-          p > label {
+        }
+        
+        p > label {
             display: block;
-          }
-          
-          input[type="text"],
-          input[type="email"],
-          input[type="number"],
-          textarea,
-          fieldset {
-            width : 100%;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        textarea,
+        fieldset {
+            width: 100%;
             border: 1px solid #333;
             box-sizing: border-box;
-          }
-          
-          input:invalid {
-            box-shadow: 0 0 5px 1px red;
-          }
-          
-          input:focus:invalid {
-            box-shadow: none;
-          }</style>
-</head>
-  <body>
-    <div class="container">
-      <h2>Questions: </h2>
-      <div class="panel panel-default">
-            <div class="panel-body">
-      <form id="Questions">
-            <p>
-                
-                <legend>Which is the correct answer?</legend>
-                <input type="radio" required name="a" id="r1" value="Correct"><label for="r1">Correct</label><br />
-                <input type="radio" required name="a" id="r2" value="Incorrect"><label for="r2">Incorrect</label><br />
-                <input type="radio" required name="a" id="r3" value="Incorrect"><label for="r3">Incorrect</label><br />
-                <input type="radio" required name="a" id="r4" value="Incorrect"><label for="r4">Incorrect</label>
-                
-            </p>
-      <button onclick="verify()">
-          Submit
-      </button>
-      <script>
-          function verify() {
-          const form = document.getElementById("questions");
-          const correctAnswer = document.getElementById("r1");
-          if (correctAnswer.checked) {
-            alert("Great Job! Your answer is correct and here is why.")
-            window.location.href = "https://beastmodepk.github.io/Project-for-software/WebPage.html";
-          } else if(!correctAnswer.checked) {
-            alert("Sorry but your answer was incorrect, here is why it's incorrect. Here's another chance to try again!")
-          }
         }
-      </script>      
-      <button onclick="window.location.href = 'https://beastmodepk.github.io/Project-for-software/Scenario1/questions.html'">Go to Questions</a>
-      </div>  
-    </div>
+        
+        input:invalid {
+            box-shadow: 0 0 5px 1px red;
+        }
+        
+        input:focus:invalid {
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Questions: </h2>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form id="Questions">
+                    <p>
+
+                        <legend>Which is the correct answer?</legend>
+                        <input type="radio" required name="a" id="r1" value="Correct">
+                        <label for="r1">Correct</label>
+                        <br />
+                        <input type="radio" required name="a" id="r2" value="Incorrect">
+                        <label for="r2">Incorrect</label>
+                        <br />
+                        <input type="radio" required name="a" id="r3" value="Incorrect">
+                        <label for="r3">Incorrect</label>
+                        <br />
+                        <input type="radio" required name="a" id="r4" value="Incorrect">
+                        <label for="r4">Incorrect</label>
+
+                    </p>
+                    <button onclick="verify()">
+                        Submit
+                    </button>
+                    <script>
+                        function verify() {
+                            const form = document.getElementById("questions");
+                            const correctAnswer = document.getElementById("r1");
+                            if (correctAnswer.checked) {
+                                alert("Great Job! Your answer is correct and here is why.")
+                                window.location.href = "https://beastmodepk.github.io/Project-for-software/WebPage.html";
+                            } else if (!correctAnswer.checked) {
+                                alert("Sorry but your answer was incorrect, here is why it's incorrect. Here's another chance to try again!")
+                            }
+                        }
+                    </script>
+                    <button onclick="window.location.href = 'https://beastmodepk.github.io/Project-for-software/Scenario1/questions.html'">Go to Questions</a>
+            </div>
+        </div>
     </div>
     <h3 style="margin-left: 425px"><a href="https://beastmodepk.github.io/Project-for-software/WebPage.html">Home</a></h3>
-  </body>
+</body>
+
 </html>
