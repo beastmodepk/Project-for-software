@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Demo video</title>
+    <title>Demostration Video</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
@@ -11,38 +11,16 @@
 </head>
 
 <body>
-        <script> 
-                var myVideo = document.getElementById("Demovid"); 
-                
-                function playPause() { 
-                  if (myVideo.paused) 
-                    myVideo.play(); 
-                  else 
-                    myVideo.pause(); 
-                } 
-                
-                function makeBig() { 
-                    myVideo.width = 560; 
-                } 
-                
-                
-                function makeNormal() { 
-                    myVideo.width = 420; 
-                } 
-                </script> 
-    <div style="text-align:center"> 
-        
-            <button onclick="playPause()">Play/Pause</button> 
-            <button onclick="makeBig()">Big</button>
-        
-            <button onclick="makeNormal()">Small</button>
-            <br><br>
-            <video id="Demovid" width="420">
-              <source src="Demovid.mkv" type="video/mkv">              
-              Your browser does not support HTML5 video.
-            </video>
-          </div> 
+    <div class="container">
+        <h2>Demostration Video</h2>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <video width="1000" length="400" controls>
+                    <source src="Demovid.mkv" type="video/mkv">
+                </video>
+            </div>
+        </div>
     </div>
-    <h3 style="margin-left: 425px"><a href="https://beastmodepk.github.io/Project-for-software/WebPage.html">Home</a></h3>
 </body>
+
 </html>
