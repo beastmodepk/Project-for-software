@@ -11,10 +11,37 @@
 </head>
 
 <body>
-    <div class="container">
-        <h2>This is the demoestration video of our Prototype</h2>
-        <video width='1060' height='500' controls autoplay> 
-            <source src="./Demovid.mkv" type='video/x-matroska'></video>
+        <script> 
+                var myVideo = document.getElementById("Demovid"); 
+                
+                function playPause() { 
+                  if (myVideo.paused) 
+                    myVideo.play(); 
+                  else 
+                    myVideo.pause(); 
+                } 
+                
+                function makeBig() { 
+                    myVideo.width = 560; 
+                } 
+                
+                
+                function makeNormal() { 
+                    myVideo.width = 420; 
+                } 
+                </script> 
+    <div style="text-align:center"> 
+        
+            <button onclick="playPause()">Play/Pause</button> 
+            <button onclick="makeBig()">Big</button>
+        
+            <button onclick="makeNormal()">Small</button>
+            <br><br>
+            <video id="Demovid" width="420">
+              <source src="Demovid.mkv" type="video/mkv">              
+              Your browser does not support HTML5 video.
+            </video>
+          </div> 
     </div>
     <h3 style="margin-left: 425px"><a href="https://beastmodepk.github.io/Project-for-software/WebPage.html">Home</a></h3>
 </body>
